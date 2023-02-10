@@ -1,9 +1,18 @@
 const nameInput = document.querySelector('#name-input');
 const nameOutput = document.querySelector('#name-output');
 
-nameInput.addEventListener('input', function AnonymousNameChek() {
+// Var1
+nameInput.addEventListener('input', function AnonymousNameChange() {
   if (this.value === '') {
-    nameOutput.textContent = 'Anonymous';
+    return (nameOutput.textContent = 'Anonymous');
   }
   nameOutput.textContent = this.value;
 });
+
+// Var2
+// nameInput.addEventListener('input', event => {
+//   if (event.currentTarget.value === '') {
+//     return (nameOutput.textContent = 'Anonymous');
+//   }
+//   nameOutput.textContent = event.currentTarget.value;
+// });
