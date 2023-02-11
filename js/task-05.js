@@ -3,7 +3,7 @@ const nameOutput = document.querySelector('#name-output');
 
 // Var1
 nameInput.addEventListener('input', function AnonymousNameChange() {
-  if (this.value === '') {
+  if (this.value === '' || this.value === ' ') {
     return (nameOutput.textContent = 'Anonymous');
   }
   nameOutput.textContent = this.value;
