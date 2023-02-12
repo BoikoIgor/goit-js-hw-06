@@ -2,7 +2,7 @@ const nameInput = document.querySelector('#name-input');
 const nameOutput = document.querySelector('#name-output');
 
 if (nameInput.value !== '') {
-  nameOutput.textContent = nameInput;
+  nameOutput.textContent = nameInput.value;
 }
 
 // Var1
